@@ -6,56 +6,8 @@
         Purpose of the stylesheet follows.
 */
 
-div#erro{
-    color: red;
-    font-weight: bold;
-}
+@import "bootstrap.min.css";
 
-* {
-	font-family:Verdana, Arial, Helvetica, sans-serif;
-	margin:0px;
-	padding:0px;
-	list-style:none;
+.title{
+    margin-bottom: 0.5em;
 }
-
-body  {
-background:url(images/fundo2.png) repeat;
-	}
-
-/*.............................css tabelas de listagem --------------------------- */
-#tblist
-{
-        cellspacing:0;
-        cellpaddind:2;
-        font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-	font-size: 12px;
-	text-align: center;
-	border-collapse: collapse;
-	background: url('images/pattern.png');
-}
-#tblist thead tr
-{
-	background: url('images/pattern-head.png');
-}
-#tblist th
-{
-	font-size: 13px;
-	font-weight: normal;        
-	padding: 2px;
-	border-bottom: 1px solid #fff;
-	color: #039;
-}
-#tblist td
-{
-	padding: 3px; 
-	border-bottom: 1px solid #fff;
-	color: #669;
-	border-right: 1px solid  #039;
-}
-#tblist tbody tr:hover td
-{
-	color: #339;
-	background: #fff;
-}
-
-/*.............................fim css tabelas de listagem --------------------------- */
