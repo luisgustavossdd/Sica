@@ -29,8 +29,8 @@ public class AbrigadaDAOTest {
        // config.addAnnotatedClass(Abrigada.class);
        // config.configure();
         //new SchemaExport(config).create(true, true); 
-//        em = Persistence.createEntityManagerFactory("default").createEntityManager();
-//        em.getTransaction().begin();
+        em = Persistence.createEntityManagerFactory("default").createEntityManager();
+        em.getTransaction().begin();
     }
 
     @AfterClass
@@ -40,7 +40,6 @@ public class AbrigadaDAOTest {
     /**
      * Test of adiciona method, of class AbrigadaDAO.
      */
-    @Ignore
     @Test
     public void testAdiciona() {
         System.out.println("adiciona");
