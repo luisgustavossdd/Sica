@@ -11,20 +11,20 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-         <link type="text/css" rel="stylesheet" href="../css/geral.css"/>
+        <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
     </head>
     <body>
         <h1>Lista de dependentes:</h1>
         <table id="tblist" cellspacing='0' cellpaddind="2">
             <thead>
-                <th>Ações</th>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Sexo</th>
-                <th>ID Abrigada</th>
-            </thead>
-            <tbody>
+            <th>Ações</th>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>ID Abrigada</th>
+        </thead>
+        <tbody>
             <c:forEach items="${dependenteList}" var="dependente">
                 <tr>
                     <td>
@@ -39,7 +39,7 @@
                     <td>${dependente.idAbrigada}</td>
                 </tr>
             </c:forEach>
-            </tbody>
-        </table>
-    </body>
+        </tbody>
+    </table>
+</body>
 </html>
