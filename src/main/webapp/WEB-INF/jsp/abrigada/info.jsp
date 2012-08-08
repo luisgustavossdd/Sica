@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
         <title>JSP Page</title>
     </head>
     <body>
@@ -18,22 +19,22 @@
         <table>
             <tr>
                 <td>Ações</td><td>
-                        <a href="<c:url value='/abrigada/deleta/${abrigada.id}'/>">DELETA</a>
-                        | <a href="<c:url value='/abrigada/edita/${abrigada.id}'/>">EDITA</a>
-                    </td>
-             <tr>
-                    <td>ID</td><td>${abrigada.id}</td>
-             </tr>
-             <tr>
-                    <td>Nome</td><td>${abrigada.nome}</td>
-             </tr>
-             <tr>
+                    <a href="<c:url value='/abrigada/deleta/${abrigada.id}'/>">DELETA</a>
+                    | <a href="<c:url value='/abrigada/edita/${abrigada.id}'/>">EDITA</a>
+                </td>
+            <tr>
+                <td>ID</td><td>${abrigada.id}</td>
+            </tr>
+            <tr>
+                <td>Nome</td><td>${abrigada.nome}</td>
+            </tr>
+            <tr>
                 <td>Telefone</td><td>${abrigada.telefone}</td>
-             </tr>
-             <tr>
+            </tr>
+            <tr>
                 <td>Endereco</td><td>${abrigada.endereco}</td>
             </tr>             
-       
+
         </table>
     </body>
 </html>

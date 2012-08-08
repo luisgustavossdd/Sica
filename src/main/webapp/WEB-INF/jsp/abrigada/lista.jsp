@@ -11,31 +11,31 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-         <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
+        <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css"/>
     </head>
     <body>
         <h1>Lista de abrigadas:</h1>
         <a href="<c:url value='/abrigada/form'/>">Cadastrar</a><br />
         <table id="tblist">
             <thead>
-                <th>Ações</th>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Cpf</th>
-                <th>Rg</th>
-                <th>Endere&ccedil;o</th>
-                <th>Cep</th>
-                <th>Data de Entrada</th>
-                <th>Data de Nascimento</th>
-                <th>Estado Civil</th>
-                <th>Profiss&atilde;o</th>
-                <th>Nacionalidade</th>
-                <th>Naturalidade</th>
-                <th>Escolaridade</th>
-                <th>Telefone</th>
-                <th>Celular</th>
-            </thead>
-            <tbody>
+            <th>Ações</th>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Cpf</th>
+            <th>Rg</th>
+            <th>Endere&ccedil;o</th>
+            <th>Cep</th>
+            <th>Data de Entrada</th>
+            <th>Data de Nascimento</th>
+            <th>Estado Civil</th>
+            <th>Profiss&atilde;o</th>
+            <th>Nacionalidade</th>
+            <th>Naturalidade</th>
+            <th>Escolaridade</th>
+            <th>Telefone</th>
+            <th>Celular</th>
+        </thead>
+        <tbody>
             <c:forEach items="${abrigadaList}" var="abrigada">
                 <tr>
                     <td>
@@ -65,7 +65,7 @@
                     <td>${abrigada.celular}</td>
                 </tr>
             </c:forEach>
-            </tbody>
-        </table>
-    </body>
+        </tbody>
+    </table>
+</body>
 </html>
